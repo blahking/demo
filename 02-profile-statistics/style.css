@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ccccff;
+}
+
+.stats-container {
+  width: 60%;
+  max-width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 5px dotted #ffffcc;
+}
+
+.icon {
+  position: absolute;
+  top: -0.5em; /*half of icon*/
+  left: 50%;
+  transform: translateX(-50%); /*translateX(-0.5em)*/
+  color: #9999cc;
+}
+
+.counter {
+  font-size: 2rem;
+  color: #9966cc;
+}
+
+h4 {
+  margin: 0;
+  padding-top: 1em;
+  color: #663366;
+  font-weight: normal;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+}
