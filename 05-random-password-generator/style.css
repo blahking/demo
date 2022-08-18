@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-container {
+  width: 80%;
+  max-width: 500px;
+  padding: 5%;
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #eee;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  letter-spacing: 2px;
+}
+
+.input::placeholder {
+  letter-spacing: 0px;
+}
+
+.fa-copy {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.fa-copy:hover {
+  opacity: 1;
+}
+
+.btn {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.alert-container {
+  width: 70%;
+  max-width: 300px;
+  height: 50px;
+  position: fixed;
+  bottom: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgreen;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.alert-container.active {
+  right: -300px;
+}
+
+@media (min-width: 900px) {
+  .input-container {
+    font-size: 1.5rem;
+  }
+  .input {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.25rem;
+  }
+  .alert-container {
+    right: 50px;
+    bottom: 50px;
+    transform: translateX(0);
+  }
+}
