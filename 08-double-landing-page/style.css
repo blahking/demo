@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  transition: width 1.2s ease-in-out;
+}
+
+.left {
+  background-color: pink;
+  background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pink-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315935");
+  background-size: cover;
+}
+
+.right {
+  background-color: lightblue;
+  background-image: url("https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-y70/imgs/nova-y70-4/huawei-nova-y70-color-1.png");
+  background-size: cover;
+}
+
+h1 {
+  color: aliceblue;
+  backdrop-filter: brightness(0.5);
+  letter-spacing: 4px;
+}
+
+.btn {
+  margin: 10rem 0;
+  padding: 1em 2em;
+  border: 4px solid #eee;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 1s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.active-left .left,
+.active-right .right {
+  width: 75%;
+}
+
+.active-left .right,
+.active-right .left {
+  width: 25%;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .btn {
+    font-size: 25px;
+  }
+}
