@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background-color: blanchedalmond;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.form {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  max-width: 500px;
+  transform: translateX(-50%);
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-top: dotted 1px darkgray;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+
+.fa-square-check {
+  margin: 0 1rem;
+}
+
+.fa-square-check:hover {
+  color: green;
+}
+
+.fa-trash-can:hover {
+  color: red;
+}
+
+.checked .todo-text {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+.checked .fa-square-check {
+  color: green;
+}
